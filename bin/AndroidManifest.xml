@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.e1858.ceapp"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FIFESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.LauncherProvider" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/> 
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/> 
+    <supports-screens
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:smallScreens="true"
+		android:anyDensity="true"/>
+    
+    <application 
+        android:name="com.e1858.CEappApp"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity android:name="com.e1858.ui.Welcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.e1858.ui.Setting"/>
+        <activity android:name="com.e1858.ui.Schedules" />
+        <activity android:name="com.e1858.ui.MessageActivity" />
+         <activity android:name="com.e1858.ui.LogoActivity"/>
+         <activity android:name="com.e1858.ui.LoginActivity"/>
+         <activity android:name="com.e1858.ui.AddNewCourse"/>
+         <activity android:name="com.e1858.ui.NoticeActivity"/>
+         <activity android:name="com.e1858.ui.NoticeInfo"/>
+         <activity android:name="com.e1858.ui.AddNewNotice"/>
+		 <activity android:name="com.e1858.ui.ResetPassActivity"/>
+		 <activity android:name="com.e1858.ui.ModifyPass" />
+		 <activity android:name="com.e1858.ui.AddCourseActivity"/>
+		 <activity android:name="com.e1858.ui.AddNewMessage"  android:windowSoftInputMode="stateAlwaysVisible"/>"
+		 <activity android:name="com.e1858.ui.AddSendMsgUsersDep"/>
+		 <activity android:name="com.e1858.ui.ArticleActivity"/>
+		 <activity android:name="com.e1858.ui.ArticleInfo"/>
+		 <activity android:name="com.e1858.ui.BookActivity"/>
+		 <activity android:name="com.e1858.ui.CourseInfo"/>
+		 <activity android:name="com.e1858.ui.EditCourseInfo"/>
+		 <activity android:name="com.e1858.ui.EjournalActivity"/>
+		 <activity android:name="com.e1858.ui.EjournalInfo"/>
+		 <activity android:name="com.e1858.ui.KnowlegeActivity"/>
+		 <activity android:name="com.e1858.ui.KnowlegeInfo"/>
+		 <activity android:name="com.e1858.ui.MessageInfo" android:windowSoftInputMode="adjustResize"
+		     />
+		 <activity android:name="com.e1858.ui.NewsActivity"/>
+		 <activity android:name="com.e1858.ui.NewsInfo"/>
+		 <activity android:name="com.e1858.ui.PersonalActivity"/>
+		 <activity android:name="com.e1858.ui.AddSendMsgUsersRole"/>
+		 <activity android:name="com.e1858.ui.AddSendMsgUsers"/>
+		 <activity android:name="com.e1858.ui.BookInfo"/>
+		 <activity android:name="com.e1858.ui.SendMsgInfo"/>
+		 <activity android:name="com.e1858.ui.ModuleHomeSelect"/>
+		 <activity android:name="com.e1858.ui.SchoolTimeTable"/>
+		 
+    </application>
+
+</manifest>

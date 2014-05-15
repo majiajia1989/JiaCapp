@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_bg"
+    android:padding="@dimen/space_8"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    >
+	<RelativeLayout
+   	 	android:layout_width="fill_parent"
+   	 	android:layout_height="wrap_content"
+    	android:padding="@dimen/space_8"
+   		android:orientation="horizontal" >
+    <TextView 
+        android:id="@+id/module_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/text_normal_color"
+        />  
+
+     <com.e1858.widget.FocusCheckBox 
+        android:id="@+id/module_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:background="@drawable/selected_gray"
+        android:button="@null"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+
+</LinearLayout>

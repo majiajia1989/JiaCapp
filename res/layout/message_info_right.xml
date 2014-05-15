@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:orientation="vertical" >
+   
+    
+   <RelativeLayout 
+         android:id="@+id/re"
+         android:layout_width="@dimen/space_267"
+    	 android:layout_height="wrap_content"    
+         android:background="@drawable/contentbox_grey"
+         android:layout_alignParentRight="true">   
+	<TextView 
+	    android:id="@+id/content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="@dimen/text_size_18"
+    	android:layout_alignParentRight="true"
+    	android:gravity="top|right"
+	    />
+	  <TextView 
+      	android:id="@+id/subtime"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+     	android:textSize="@dimen/text_size_16"
+      	android:layout_alignParentRight="true"
+      	android:layout_below="@id/content"
+     />
+	</RelativeLayout>
+	<FrameLayout 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/re"
+	    >
+	 <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:src="@drawable/msg_fail"
+        android:visibility="gone"
+        />
+	 <ProgressBar 
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:id="@+id/bar"
+	     style="?android:attr/progressBarStyleSmall"
+	     android:visibility="gone"
+	     />
+	 </FrameLayout>
+</RelativeLayout>

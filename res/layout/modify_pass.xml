@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_10"
+        >
+          <EditText
+	      	android:textSize="@dimen/text_size_22" 
+          	android:textColor="@color/black" 
+          	android:textColorHint="@color/gray" 
+          	android:id="@+id/account"
+          	android:layout_width="fill_parent" 
+          	android:layout_height="@dimen/space_46" 
+          	android:focusable="false"
+          	android:background="@null"
+         	 android:inputType="text"/>
+           <com.e1858.widget.ClearEditText 
+         	android:textSize="@dimen/text_size_18" 
+         	android:textColor="@color/black" 
+          	android:textColorHint="@color/gray" 
+          	android:id="@+id/old_pass"
+          	android:layout_width="fill_parent" 
+          	android:layout_height="@dimen/space_46" 
+          	android:hint="旧密码" 
+          	android:background="@drawable/bg_shadow"
+          	android:drawableRight="@drawable/selector_bg_delete"
+          	android:padding="@dimen/space_8"
+          	android:inputType="textPassword"/>
+      
+           <com.e1858.widget.ClearEditText
+         	android:textSize="@dimen/text_size_18" 
+         	android:textColor="@color/black" 
+          	android:textColorHint="@color/gray" 
+          	android:id="@+id/new_pass"
+          	android:layout_width="fill_parent" 
+          	android:layout_height="@dimen/space_46" 
+          	android:hint="新密码" 
+          	android:background="@drawable/bg_shadow"
+          	android:padding="@dimen/space_8"
+          	android:drawableRight="@drawable/selector_bg_delete"
+          	android:inputType="textPassword"/>
+       
+           <com.e1858.widget.ClearEditText 
+         	android:textSize="@dimen/text_size_18" 
+         	android:textColor="@color/black" 
+          	android:textColorHint="@color/gray" 
+          	android:id="@+id/new_pass_confirm"
+          	android:layout_width="fill_parent" 
+          	android:padding="@dimen/space_8"
+          	android:layout_height="@dimen/space_46" 
+          	android:hint="确认密码" 
+          	android:background="@drawable/bg_shadow"
+          	android:drawableRight="@drawable/selector_bg_delete"
+          	android:inputType="textPassword"/>
+     
+        
+        <Button 
+            android:textSize="@dimen/text_size_22" 
+            android:textColor="@color/white" 
+            android:gravity="center" 
+            android:id="@+id/btn_modifypass" 
+            android:background="@drawable/selector_bg_blue" 
+            android:layout_width="fill_parent" 
+            android:layout_height="@dimen/space_46" 
+            android:layout_marginTop="@dimen/space_100"
+            android:text="确认修改"
+            />
+    </LinearLayout>
+
+</LinearLayout>

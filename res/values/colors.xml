@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="ivory">#fffffff0</color><!-- 象牙色 -->
+    <color name="yellow">#ffffff00</color>
+    <color name="snow">#fffffafa</color>
+    <color name="blanchedalmond">#ffffebcd</color><!-- 白杏色 -->
+    <color name="gold">#ffffd700</color>
+    <color name="pink">#ffffc0cb</color><!-- 粉红色 -->
+    <color name="orange">#ffffa500</color>
+    <color name="red">#ffff0000</color>
+    <color name="blue">#ff4e72b8</color>
+ 	<color name="gray">#ff858585</color>
+ 	<color name="green">#ff008000</color>
+    <color name="listitem_transparent">#00000000</color>   
+    <color name="gray_light">#ffcdcdcd</color>
+    <color name="divider_bg">#ffe5e5e5</color>
+    
+    
+    <color name="app_background">#fff2f2f2</color>
+    <color name="title_bar_background">#ff0fbcce</color>
+    <color name="title_bar_btn_bg">#ff02747f</color>
+    
+    <color name="text_yellow">#ffee9127</color>
+     
+    <color name="main_blue">#ff0fbcce</color>
+    <color name="main_blue_selected">#ff07a0b0</color>
+  
+    <color name="main_yello">#fffdc70e</color>
+    <color name="main_yello_selected">#fffdb70e</color>
+    
+    <color name="main_darkblue">#ff02747f</color>
+    <color name="main_darkblue_selected">#ff025058</color>
+    
+    <color name="main_red">#fffb5353</color>
+    <color name="main_red_selected">#ffec3535</color>
+    
+    <color name="main_gray">#ff7d7d7d</color>
+    
+    
+    <color name="week_one">#fffb5b5b</color>
+    <color name="week_two">#fffb9b5b</color>
+    <color name="week_three">#fffeca05</color>
+    <color name="week_four">#ffd7fb5b</color>
+    <color name="week_five">#ff5bfbea</color>
+    <color name="week_six">#ff5bbdfb</color>
+    <color name="week_seven">#ff8c5bfb</color>
+    <color name="left_row_hight">#fff7f7f8</color>
+    <color name="left_row_dark">#ffe0dede</color>
+    
+    <color name="text_bg_dark_gray">#ff50ddeb</color>
+    <color name="text_bg_light_gray">#ffe3e2e2</color>
+    
+    <color name="menu_bg">#ff717272</color>
+    
+    <color name="ablum_bg">#fff18f80</color>
+    <color name="text_normal_color">#ff363636</color>
+    
+    <color name="orange_bg">#fffc5900</color>
+    
+    
+</resources>

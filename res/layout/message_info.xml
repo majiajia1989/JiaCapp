@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@color/app_background"
+  >   
+
+  <include
+      android:layout_width="wrap_content"
+      layout="@layout/title_bar" />
+
+  <RelativeLayout 
+       android:layout_width="fill_parent"
+ 	 	android:layout_height="fill_parent"
+  		android:orientation="vertical"
+      >
+  <ListView
+    	android:id="@+id/msginfo_list"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_marginLeft="10.0dip" 
+		android:layout_marginTop="10.0dip" 
+		android:layout_marginRight="10.0dip"
+    	android:divider="@null"
+    	android:dividerHeight="@dimen/space_10"
+    	android:layout_marginBottom="@dimen/space_46"
+    	android:scrollbars="none"
+    	android:cacheColorHint="#00000000"/>    
+  	<RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/space_5"
+      android:layout_alignParentBottom="true"
+      android:background="@color/main_blue" > 
+  
+
+    <EditText
+        android:id="@+id/sendmsg_edit"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/btn_send"
+        android:background="@drawable/bg_shadow"
+        android:padding="@dimen/space_10"
+        android:textSize="18sp" />
+      
+     <Button
+         android:id="@+id/btn_send"
+         android:layout_width="60dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@id/sendmsg_edit"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@id/sendmsg_edit"
+         android:layout_centerVertical="true"
+         android:background="@drawable/selector_bg_yellow"
+         android:padding="@dimen/space_10"
+         android:text="发送"
+         android:textSize="16sp" />
+  
+  </RelativeLayout>
+ </RelativeLayout>
+</LinearLayout>

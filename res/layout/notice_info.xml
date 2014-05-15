@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar"/>
+       <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_80"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_8"
+            >
+            <TextView 
+                android:id="@+id/notice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_20"
+                android:gravity="center"
+                />
+            <TextView 
+                android:id="@+id/notice_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center"
+                />  
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/divider_bg"
+                /> 
+            <TextView 
+                android:id="@+id/notice_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:textSize="@dimen/text_size_18"
+                />
+            <Button 
+                android:text="下载附件"
+                android:layout_width="fill_parent"
+                android:id="@+id/download"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_20"
+                android:background="@drawable/selector_bg_yellow"
+                android:textColor="@color/white"
+                android:padding="@dimen/space_8"
+                android:visibility="gone"
+                />              
+        </LinearLayout>
+    </ScrollView> 
+
+</LinearLayout>

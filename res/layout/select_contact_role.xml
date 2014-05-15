@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/teacher_resp"
+            android:background="@drawable/listview_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/space_10"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_normal_color"
+                android:text="选择教师" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_next_disabled" />
+        </RelativeLayout>
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/divider_bg"
+            />
+ 		<RelativeLayout
+            android:id="@+id/student_resp"
+            android:layout_width="fill_parent"
+            android:background="@drawable/listview_bg"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/space_10"
+                android:textColor="@color/text_normal_color"
+                android:text="选择班级" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_next_disabled" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

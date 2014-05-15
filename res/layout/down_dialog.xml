@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.e1858.ceapp"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="@dimen/space_150"
+    android:layout_height="@dimen/space_150"
+    android:layout_marginLeft="@dimen/space_20"
+    android:background="@drawable/bg_dialog"
+    android:layout_marginRight="@dimen/space_20"
+    android:gravity="center" 
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <com.e1858.widget.RoundProgressBar  
+        android:id="@+id/roundProgressBar"  
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_100"  
+        android_custom:roundColor="@color/gray_light"  
+        android_custom:roundProgressColor="@color/ablum_bg"  
+        android_custom:textColor="@color/black"  
+        android_custom:roundWidth="@dimen/space_10"  
+        android_custom:textSize="18sp"/>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+ 
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/lay1"
+        android:layout_marginTop="@dimen/space_80"
+        >
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/login_logo"
+            />    
+    </LinearLayout>
+  	
+    <LinearLayout 
+        android:gravity="center" 
+        android:layout_gravity="center"
+        android:id="@+id/lay2"
+         android:layout_below="@id/lay1"
+        android:orientation="vertical" 
+        android:background="@drawable/bg_shadow" 
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_6">
+        
+           <LinearLayout 
+               android:gravity="center_vertical" 
+               android:orientation="horizontal" 
+               android:background="@color/white" 
+               android:paddingLeft="@dimen/space_12" 
+               android:paddingRight="@dimen/space_10" 
+               android:layout_width="fill_parent" 
+               android:layout_height="wrap_content" 
+               android:minHeight="@dimen/space_42">
+               <com.e1858.widget.ClearEditText 
+                   android:textSize="@dimen/text_size_18" 
+                   android:textColor="@color/black" 
+                   android:textColorHint="@color/gray" 
+                   android:id="@+id/account" 
+                   android:drawableRight="@drawable/selector_bg_delete"
+                   android:background="@android:color/transparent" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="@dimen/space_50" 
+                   android:hint="@string/account_str" 
+                   android:inputType="text"             
+                   />
+          </LinearLayout>
+          <View android:background="@color/divider_bg" 
+              android:layout_width="fill_parent" 
+              android:layout_height="@dimen/space_1" />
+           <LinearLayout android:gravity="center_vertical" 
+               android:orientation="horizontal" 
+               android:background="@color/white" 
+               android:paddingLeft="@dimen/space_12" 
+               android:paddingRight="@dimen/space_10" 
+               android:layout_width="fill_parent" 
+               android:layout_height="wrap_content" 
+               android:minHeight="@dimen/space_42">
+               <com.e1858.widget.ClearEditText 
+                   android:textSize="@dimen/text_size_18" 
+                   android:textColor="@color/black" 
+                   android:textColorHint="@color/gray" 
+                   android:id="@+id/password" 
+                   android:background="@android:color/transparent" 
+                   android:drawableRight="@drawable/selector_bg_delete"
+                   android:layout_width="fill_parent" 
+                   android:layout_height="@dimen/space_50" 
+                   android:hint="@string/password_str" 
+                   android:inputType="textPassword" />
+            </LinearLayout>
+      </LinearLayout>
+       <LinearLayout 
+           android:orientation="vertical" 
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:paddingTop="@dimen/space_2" 
+           android:id="@+id/lay3"
+           android:layout_below="@id/lay2"
+           android:paddingBottom="@dimen/space_4" 
+           android:layout_marginLeft="@dimen/space_10"
+           android:layout_marginRight="@dimen/space_10"
+           android:layout_marginTop="@dimen/space_10"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/text_size_24" 
+                    android:textColor="@color/white" 
+                    android:gravity="center" 
+                    android:id="@+id/btn_login" 
+                    android:background="@drawable/selector_bg_yellow" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="@dimen/space_55" 
+                    android:text="@string/login"
+                    android:textStyle="bold"
+                     />     
+      </LinearLayout>
+   <LinearLayout 
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="@dimen/space_20"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center"
+       >
+        <Button 
+             android:textSize="@dimen/text_size_16" 
+             android:textColor="@color/gray" 
+             android:gravity="right|center" 
+             android:id="@+id/btn_about" 
+             android:background="@color/app_background"
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content"
+             android:layout_marginRight="@dimen/space_10"
+             android:padding="@dimen/space_8" 
+             android:textStyle="bold"
+             android:text="关于" />
+        <View 
+            android:layout_width="@dimen/space_1"
+            android:layout_height="@dimen/space_10"
+            android:background="@color/gray"
+            />
+         <Button 
+              android:textSize="@dimen/text_size_16" 
+              android:textColor="@color/gray" 
+              android:gravity="right|center" 
+              android:id="@+id/btn_forgetpass" 
+              android:background="@color/app_background"
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:layout_marginLeft="@dimen/space_10"
+              android:padding="@dimen/space_8" 
+              android:textStyle="bold"
+              android:text="@string/forget_pass" />
+   </LinearLayout>   
+       
+</RelativeLayout>

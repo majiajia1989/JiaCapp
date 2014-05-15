@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar"/>
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:scrollbars="none"
+	    >
+	 <LinearLayout android:orientation="vertical" 
+	     android:id="@+id/add_course_form" 
+	     android:padding="@dimen/space_8" 
+	     android:layout_width="fill_parent" 
+	     android:layout_height="wrap_content">   
+	  
+	     
+	    <LinearLayout 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">          
+         <LinearLayout
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content" 
+             style="@style/style_horizontal_layout">
+           <ImageView
+                android:layout_width="@dimen/space_20" 
+                android:layout_height="@dimen/space_20" 
+                android:layout_marginLeft="@dimen/space_5" 
+                android:layout_marginRight="@dimen/space_10" 
+                android:src="@drawable/course_icon" />
+            <EditText 
+                 android:textColor="@color/black" 
+                 android:id="@+id/course_name" 
+                 android:background="@android:color/transparent" 
+                 android:layout_width="fill_parent" 
+                 android:layout_height="wrap_content" 
+                 android:hint="@string/edit_coursename" 
+                 android:singleLine="true" />
+          </LinearLayout>
+          <View
+              android:background="@drawable/content_item" 
+              android:layout_width="fill_parent" 
+              android:layout_height="@dimen/space_1" />
+           <LinearLayout 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              style="@style/style_horizontal_layout">
+             <ImageView
+                 android:layout_width="@dimen/space_20" 
+                 android:layout_height="@dimen/space_20" 
+                 android:layout_marginLeft="@dimen/space_5" 
+                 android:layout_marginRight="@dimen/space_10" 
+                 android:src="@drawable/teacher_icon" />
+               <EditText
+                   android:textColor="@color/black" 
+                   android:id="@+id/teacher" 
+                   android:background="@android:color/transparent" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" 
+                   android:hint="@string/edit_teachername" 
+                   android:singleLine="true" />
+             </LinearLayout>
+             <View 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/content_titile_item"
+                 />
+        </LinearLayout>
+        	    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/add_course_layout"
+        />             
+    <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+        <Button 
+            android:id="@+id/add_more_course_time"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_45"
+            android:text="@string/add_more_course_time"
+            android:textSize="@dimen/text_size_18"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/selector_bg_yellow"
+            />
+       
+   </LinearLayout>
+  </LinearLayout> 
+</ScrollView>  
+</LinearLayout>

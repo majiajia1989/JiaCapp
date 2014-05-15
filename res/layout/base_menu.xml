@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+     <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"   
+        android:background="#ff7c7e7e"
+        >
+   		<RelativeLayout
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="@dimen/space_48"
+ 
+   		    >
+   			<TextView
+   			    android:id="@+id/menu_title"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_alignParentLeft="true"
+   			    android:layout_centerVertical="true"
+   			    android:textColor="@color/white"
+   			    android:textSize="@dimen/text_size_18" />
+
+   			<Button
+   			    android:id="@+id/logout"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="fill_parent"
+   			    android:layout_alignParentRight="true"
+   			    android:background="#ff717272"
+   			    android:padding="@dimen/space_8"
+   			    android:layout_centerVertical="true"
+   			    android:text="注销"
+   			    android:textColor="@color/white"
+   			    android:layout_marginBottom="@dimen/space_1"
+   			    android:textSize="@dimen/text_size_18" />
+
+   		</RelativeLayout>
+        <ListView 
+            android:id="@+id/menulist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none"
+            >          
+        </ListView>
+    </LinearLayout>
+	<LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/slide_title_bar"/>
+     </LinearLayout>
+     
+</LinearLayout>
